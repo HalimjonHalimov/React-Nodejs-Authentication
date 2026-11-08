@@ -1,0 +1,109 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(124, 58, 237, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(79, 70, 229, 0.2),
+      transparent 35%
+    ),
+    #0b1020;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 35px;
+
+  text-align: center;
+
+  background: rgba(20, 27, 48, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+.home-logo {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+
+  border-radius: 18px;
+  background: linear-gradient(135deg, #8b5cf6, #4f46e5);
+}
+
+.home-card h1 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.home-card p {
+  color: #929bb2;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.home-buttons a {
+  flex: 1;
+  padding: 14px 10px;
+
+  border-radius: 10px;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.home-login {
+  color: white;
+  background: linear-gradient(135deg, #8b5cf6, #5b4be7);
+}
+
+.home-register {
+  color: #c4b5fd;
+  border: 1px solid #8b5cf6;
+}
+
+.home-buttons a:hover {
+  transform: translateY(-3px);
+}
+
+.home-footer {
+  display: block;
+  margin-top: 35px;
+  color: #68748e;
+  font-size: 12px;
+}
+
+@media (max-width: 420px) {
+  .home-buttons {
+    flex-direction: column;
+  }
+}
